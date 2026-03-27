@@ -58,10 +58,10 @@ btnTipoSoldado.addEventListener("click", () => {
 //escolha to tipo
 
 btnTipoOfical.addEventListener("click", () => {
-    window.location.href = "taf-m-oficial.html"; //manda para pagina de tipo oficial
+    window.location.href = "pages/taf-m-oficial.html"; //manda para pagina de tipo oficial
 })
 
 btnTipoSoldado.addEventListener("click", () => {
-    window.location.href = "taf-m-soldado.html";
+    window.location.href = "pages/taf-m-soldado.html";
 })
 
