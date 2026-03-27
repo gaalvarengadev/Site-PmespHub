@@ -1,0 +1,435 @@
+/* Logo da pagina */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #F4F7F9;
+}
+
+main {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+header {
+    background: #0A192F;
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linksbar a:hover {
+    transform: scale(0.95);
+}
+
+#logo {
+    display: flex;
+    margin-left: 50px;
+    width: 70px;
+    height: 70px;
+}
+
+.linksbar {
+    display: flex;
+    gap: 40px;
+    margin-right: 50px;
+    transition: 2 ease;
+}
+
+.hero {
+    margin-top: 50px;
+    padding-left: 60px;
+    line-height: 1.5;
+}
+
+#sub {
+    display: block;
+}
+
+h1 {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    color: #1B365D;
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cards-container {
+    margin: 30px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border: 2px solid #1B365D;
+    border-radius: 12px;
+    padding: 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 200px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 60px;
+}
+
+.card input {
+    border: 0px;
+    background: #1B365D;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card input:hover {
+    transform: scale(0.95);
+    transition: 0.6s;
+}
+
+.card p {
+    font-weight: 500;
+}
+
+footer {
+    background: #0A192F;
+    min-height: 72px;
+}
+
+.botao-ver-mais {
+    display: flex;
+    flex-direction: column;
+    background-color: #1B365D;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.botao-ver-mais:hover {
+    transform: scale(1.05);
+    background-color: #0A192F;
+}
+
+
+/*pop up*/
+
+
+/* garante que o dialog fique no centro */
+
+#sexoDialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    padding: 20px;
+    max-width: 90vw;
+    border: 2px solid #1B365D;
+    border-radius: 12px;
+}
+
+#titulo-popup {
+    margin-top: 20px;
+    text-align: center;
+    color: #1B365D;
+    font-size: 30px;
+}
+
+
+/* fundo escurecido atrás do popup */
+
+#sexoDialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.btns-popup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px;
+    align-items: center;
+}
+
+.btns-popup button {
+    background-color: #1B365D;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.2s;
+    margin: 10px;
+}
+
+.btns-popup button:hover {
+    transform: scale(1.05);
+    background-color: #0A192F;
+}
+
+
+/*pop up do tipo*/
+
+
+/* garante que o dialog fique no centro */
+
+#tipoDialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    padding: 20px;
+    max-width: 90vw;
+    border: 2px solid #1B365D;
+    border-radius: 12px;
+}
+
+#titulo-popup {
+    margin-top: 20px;
+    text-align: center;
+    color: #1B365D;
+    font-size: 30px;
+}
+
+
+/* fundo escurecido atrás do popup */
+
+#tipoDialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.btns-popup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px;
+    align-items: center;
+}
+
+.btns-popup button {
+    background-color: #1B365D;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.2s;
+    margin: 10px;
+}
+
+.btns-popup button:hover {
+    transform: scale(1.05);
+    background-color: #0A192F;
+}
+
+
+/*pagina do TAF Masculinos*/
+
+.introduction {
+    margin-left: 50px;
+    text-align: left;
+    width: 500px;
+}
+
+.introduction h2 {
+    margin-bottom: 20px;
+    color: #1B365D;
+}
+
+#titleExercise {
+    text-align: left;
+    color: #1B365D;
+    margin-left: 50px;
+}
+
+
+/* cards proprios da pagina*/
+
+.cards-container-TafM {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.card-TafM {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 60px;
+    gap: 20px;
+    background-color: #1B365D;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.card-TafM:hover {
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+
+.card-TafM a {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card-TafM a:hover {
+    transform: scale(1.05);
+}
+
+.title-card {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/*configuração das imagens dos cards dos exercicios*/
+
+.exercicio {
+    width: 100px;
+}
+
+
+/*pagina taf main*/
+
+#introducao-mainTaf {
+    margin-top: 30px;
+    width: 600px;
+}
+
+
+/*Pagina TAF MAsculino Soldado*/
+
+.fundo-pagina-TafSoldado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-TafM-fixo {
+    width: 100%;
+    max-width: 1400px;
+    height: 350px;
+    display: flex;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    justify-content: space-around;
+    margin: 10px 100px;
+}
+
+.container-texto-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.card-criterios {
+    display: flex;
+    flex-direction: row;
+}
+
+.lista-execucao li {
+    padding: 20px;
+}
+
+.criterios {
+    flex: 1;
+}
+
+.card-TafM-fixo h2 {
+    color: #1B365D;
+}
+
+.lista-execucao li {
+    color: #1B365D;
+    font-weight: bold;
+}
+
+.card-TafM-fixo p {
+    color: #4A5568;
+}
+
+
+/*Fim da PAgina TAF Masculino Soldado*/
+
+
+/*pagina onde faz download das provas e gabritos soldado*/
+
+.cards-container-soldado {
+    margin: 30px 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-soldado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #1B365D;
+    border-radius: 12px;
+    padding: 60px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 200px;
+    margin: 20px;
+}
+
+
+/*fim da pagina download prova e gabarito soldado*/

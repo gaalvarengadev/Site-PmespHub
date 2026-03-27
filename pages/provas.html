@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="assets/img/logo3.png">
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="/js/main.js" defer></script>
+    <title>PmespHub</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="/assets/img/logo3.png" id="logo"></a>
+                <h2>PMESP HUB</h2>
+
+            </div>
+
+            <div class="linksbar">
+                <a href="index.html">Home</a>
+                <a href="contato.html">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h1>Provas e Gabaritos<span id="sub">
+                    <h3>PMESP</h3>
+                </span></h1>
+            <p>Acesse o acervo completo de provas anteriores para treinar sua performance e conhecer o padrão da banca examinadora</p>
+        </section>
+
+        <section class="cards-container">
+            <div class="card">
+                <img src="/assets/img/edital.svg">
+                <p>Soldado</p>
+                <a href="/pages/soldadoprovagabarito.html" class="botao-ver-mais">Ver Mais</a>
+            </div>
+
+
+
+            <div class="card">
+                <img src="/assets/img/prova.svg">
+                <p>Oficial</p>
+                <a href="/pages/provasconteudo.html" class="botao-ver-mais">Ver Mais</a>
+            </div>
+
+
+        </section>
+
+        <!--dialog escolha de sexo-->
+        <dialog id="sexoDialog">
+            <h3 id="titulo-popup">Selecione seu sexo</h3>
+
+            <div class="btns-popup">
+                <button type="button" id="btnMasculino">Homem</button>
+                <button type="button" id="btnFeminino">Mulher</button>
+
+                <button type="button" id="btnCancelarSexo">Cancelar</button>
+            </div>
+        </dialog>
+
+        <!--dialogo da escolha para soldado ou oficial-->
+        <dialog id="tipoDialog">
+            <h3 id="titulo-popup">Selecione seu objetivo</h3>
+
+            <div class="btns-popup">
+                <button type="button" id="btnTipoOficial">Oficial</button>
+                <button type="button" id="btnTipoSoldado">Soldado</button>
+
+                <button type="button" id="btnCancelarTipo">Cancelar</button>
+            </div>
+        </dialog>
+
+    </main>
+
+
+</html>

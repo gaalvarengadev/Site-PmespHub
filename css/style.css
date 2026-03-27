@@ -1,0 +1,36 @@
+:root {
+    --azul-escuro: #0A192F;
+    --azul-medio: #1B365D;
+    --azul-claro: #E6F0F8;
+    --fundo-site: #F4F7F9;
+    --branco: #FFFFFF;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/*botao da pagina TAF*/
+
+.iniciar {
+    display: inline-flex;
+    flex-direction: column;
+    background: #1B365D;
+    color: white;
+    margin-top: 40px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.iniciar:hover {
+    transform: scale(1.05);
+    background-color: #0A192F;
+}
