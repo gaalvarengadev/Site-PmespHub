@@ -7,12 +7,12 @@ const sexoDialog = document.getElementById("sexoDialog")
 const tipoDialog = document.getElementById("tipoDialog")
 
 //botoes de dialog sexo
-const btnSexoMasculino = document.getElementById("btnSexoMasculino")
-const btnSexoFeminino = document.getElementById("btnSexoFeminino")
+const btnMasculino = document.getElementById("btnMasculino")
+const btnFeminino = document.getElementById("btnFeminino")
 const btnCancelarSexo = document.getElementById("btnCancelarSexo")
 
 //botoes de dialog tipo
-const btnTipoOfical = document.getElementById("btnTipoOficial")
+const btnTipoOficial = document.getElementById("btnTipoOficial")
 const btnTipoSoldado = document.getElementById("btnTipoSoldado")
 const btnCancelarTipo = document.getElementById("btnCancelarTipo")
 
@@ -20,48 +20,53 @@ const btnCancelarTipo = document.getElementById("btnCancelarTipo")
 let sexoSelecionado = null; // "M" | "F"
 
 //evento de clicar no Ver mais e abre o pop de escolha sexo
-verMais.addEventListener("click", (e) => {
-    e.preventDefault()
-    sexoDialog.showModal() // aqui ele chama o pop up de escolha de sexo
-})
+if (verMais) {
+    verMais.addEventListener("click", (e) => {
+        e.preventDefault()
+        sexoDialog.showModal() // aqui ele chama o pop up de escolha de sexo
+    })
+}
 
 //apos o escolha sexo ele abre o pop up do tipo
 //btn masculino
-btnMasculino.addEventListener("click", () => {
-    sexoSelecionado = "M"
-    sexoDialog.close()
-    tipoDialog.showModal()
-})
+if (btnMasculino) {
+    btnMasculino.addEventListener("click", () => {
+        sexoSelecionado = "M"
+        sexoDialog.close()
+        tipoDialog.showModal()
+    })
+}
 
 //btn feminino
-btnFeminino.addEventListener("click", () => {
-    sexoSelecionado = "F"
-    sexoDialog.close()
-    tipoDialog.showModal()
-})
+if (btnFeminino) {
+    btnFeminino.addEventListener("click", () => {
+        sexoSelecionado = "F"
+        sexoDialog.close()
+        tipoDialog.showModal()
+    })
+}
 
-btnCancelarSexo.addEventListener("click", () => {
-    sexoDialog.close()
-})
+if (btnCancelarSexo) {
+    btnCancelarSexo.addEventListener("click", () => {
+        sexoDialog.close()
+    })
+}
 
-btnCancelarTipo.addEventListener("click", () => {
-    tipoDialog.close()
-})
+if (btnCancelarTipo) {
+    btnCancelarTipo.addEventListener("click", () => {
+        tipoDialog.close()
+    })
+}
 
-//btn feminino
-btnTipoSoldado.addEventListener("click", () => {
-    sexoSelecionado = "F"
-    sexoDialog.close()
-    tipoDialog.showModal()
-})
+//escolha do tipo
+if (btnTipoOficial) {
+    btnTipoOficial.addEventListener("click", () => {
+        window.location.href = "/pages/taf-m-oficial.html"; //manda para pagina de tipo oficial
+    })
+}
 
-//escolha to tipo
-
-btnTipoOfical.addEventListener("click", () => {
-    window.location.href = "pages/taf-m-oficial.html"; //manda para pagina de tipo oficial
-})
-
-btnTipoSoldado.addEventListener("click", () => {
-    window.location.href = "pages/taf-m-soldado.html";
-})
-
+if (btnTipoSoldado) {
+    btnTipoSoldado.addEventListener("click", () => {
+        window.location.href = "/pages/taf-m-soldado.html";
+    })
+}
